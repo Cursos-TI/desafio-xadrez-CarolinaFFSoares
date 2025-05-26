@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 int main(){
 
 int casastorre = 5;
@@ -29,11 +27,27 @@ do{
     casasandandasrainha++;
 } while (casasandandasrainha < casasrainha);
 
+ // Movimento do CAVALO
+ int movimentosCavalo = 1; // Simulando 1 movimento em L
+ int i; // variável para o for
+ int j; // variável para o while
 
+ printf("\nMovimento do Cavalo:\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+ // Loop externo: número de vezes que faremos o movimento completo
+ for (int m = 0; m < movimentosCavalo; m++) {
+     // Primeiro loop interno: duas casas para baixo (usando for)
+     for (i = 0; i < 2; i++) {
+         printf("Baixo\n");
+     }
+
+     // Segundo loop interno: uma casa para a esquerda (usando while)
+     j = 0;
+     while (j < 1) {
+         printf("Esquerda\n");
+         j++;
+     }
+ }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
